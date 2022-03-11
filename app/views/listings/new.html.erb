@@ -1,0 +1,10 @@
+<%=form_with model: @listing do |f|%>
+  <%=f.text_field :title, placeholder: 'Title'%>
+  <%=f.text_field :location, placeholder: 'Location'%>
+  <%=f.text_field :description, placeholder: 'Description'%>
+  <%=f.text_field :image, placeholder: 'Image link'%>
+  <%=f.number_field :price, placeholder: 'Price'%>
+  <%=f.hidden_field :user_id, {:value => 21} %>
+  <%=f.submit 'Submit listing'%>
+
+<%end%>
